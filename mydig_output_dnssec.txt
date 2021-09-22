@@ -3,7 +3,7 @@ A records
 ######################################################
 
 (Input)
-python3 mydig.py www.dnssec-failed.org A --dnssec  
+./mydig.py www.dnssec-failed.org A --dnssec  
 
 (Output)
 Could not verify zone for  dnssec-failed.org.  Reason:  Hashes don't match
@@ -12,7 +12,7 @@ DNSSec verification failed
 ---------------------------------------------------------
 
 (Input)
-python3 mydig.py verisigninc.com A --dnssec  
+./mydig.py verisigninc.com A --dnssec  
 
 (Output)
 QUESTION SECTION:
@@ -29,7 +29,7 @@ MSG SIZE rcvd: 183
 ---------------------------------------------------------
 
 (Input)
-python3 mydig.py google.co.jp A --dnssec  
+./mydig.py google.co.jp A --dnssec  
 
 (Output)
 DNSSEC not supported
@@ -40,7 +40,7 @@ NS records
 ######################################################
 
 (Input)
-python3 mydig.py verisigninc.com NS --dnssec  
+./mydig.py verisigninc.com NS --dnssec  
 
 (Output)
 QUESTION SECTION:

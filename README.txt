@@ -34,20 +34,28 @@ ajjikuttira-gagan-ganapathy-HW1
 
 - Running the DNS resolver:
 
-$ python3 mydig.py cnn.com A
+$ ./mydig.py cnn.com A
 
-$ python3 mydig.py google.com NS
+$ ./mydig.py google.com NS
 
-$ python3 mydig.py amazon.com MX
+$ ./mydig.py amazon.com MX
 
 
 - Running the DNSSEC resolver: (Just add the --dnssec flag to your queries)
 
-$ python3 mydig.py verisigninc.com A --dnssec
+$ ./mydig.py verisigninc.com A --dnssec
 
-$ python3 mydig.py verisigninc.com NS --dnssec
+$ ./mydig.py verisigninc.com NS --dnssec
 
-$ python3 mydig.py exmaple.com MX --dnssec
+$ ./mydig.py exmaple.com MX --dnssec
+
+
+NOTE:
+- If incase the `./mydig.py` doesn't work, `cd` into your working directory and run
+
+$ chmod +x mydig.py
+
+now try running the script as `./mydig.py`
 
 
 - Externel Libraries used:
