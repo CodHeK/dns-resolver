@@ -1,0 +1,15 @@
+
+QUESTION SECTION:
+yahoo.com 		IN	 A
+
+ANSWER SECTION:
+yahoo.com IN	 A 	 74.6.143.25
+yahoo.com IN	 A 	 74.6.143.26
+yahoo.com IN	 A 	 74.6.231.20
+yahoo.com IN	 A 	 98.137.11.163
+yahoo.com IN	 A 	 98.137.11.164
+yahoo.com IN	 A 	 74.6.231.21
+
+Query time: 381.0 msec
+WHEN: Thu Sep 16 00:17:22 2021
+MSG SIZE rcvd: 293

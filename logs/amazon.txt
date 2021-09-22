@@ -1,0 +1,12 @@
+
+QUESTION SECTION:
+amazon.com 		IN	 A
+
+ANSWER SECTION:
+amazon.com IN	 A 	 176.32.103.205
+amazon.com IN	 A 	 54.239.28.85
+amazon.com IN	 A 	 205.251.242.103
+
+Query time: 659.0 msec
+WHEN: Thu Sep 16 00:17:20 2021
+MSG SIZE rcvd: 211

@@ -1,0 +1,15 @@
+
+QUESTION SECTION:
+google.com 		IN	 A
+
+ANSWER SECTION:
+google.com IN	 A 	 64.233.185.100
+google.com IN	 A 	 64.233.185.138
+google.com IN	 A 	 64.233.185.102
+google.com IN	 A 	 64.233.185.101
+google.com IN	 A 	 64.233.185.113
+google.com IN	 A 	 64.233.185.139
+
+Query time: 3980.0 msec
+WHEN: Thu Sep 16 02:21:36 2021
+MSG SIZE rcvd: 315

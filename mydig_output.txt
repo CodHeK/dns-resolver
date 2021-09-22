@@ -1,0 +1,299 @@
+######################################################
+A records
+######################################################
+
+(Input)
+python3 mydig.py cnn.com. A  
+
+(Output)
+QUESTION SECTION:
+cnn.com.                 IN       A
+
+ANSWER SECTION:
+cnn.com. IN       A       151.101.193.67
+cnn.com. IN       A       151.101.65.67
+cnn.com. IN       A       151.101.1.67
+cnn.com. IN       A       151.101.129.67
+
+Query time: 329 msec
+WHEN: Sun Sep 19 16:37:07 2021
+MSG SIZE rcvd: 226
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py www.google.com. A  
+
+(Output)
+QUESTION SECTION:
+www.google.com.          IN       A
+
+ANSWER SECTION:
+www.google.com. IN        A       142.250.9.106
+www.google.com. IN        A       142.250.9.103
+www.google.com. IN        A       142.250.9.105
+www.google.com. IN        A       142.250.9.99
+www.google.com. IN        A       142.250.9.147
+www.google.com. IN        A       142.250.9.104
+
+Query time: 343 msec
+WHEN: Sun Sep 19 16:38:17 2021
+MSG SIZE rcvd: 333
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py www.cnn.com. A  
+
+(Output)
+QUESTION SECTION:
+www.cnn.com.             IN       A
+
+ANSWER SECTION:
+www.cnn.com. IN   A       199.232.37.67
+
+Query time: 1539 msec
+WHEN: Sun Sep 19 16:38:45 2021
+MSG SIZE rcvd: 144
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py amazon.com. A  
+
+(Output)
+QUESTION SECTION:
+amazon.com.              IN       A
+
+ANSWER SECTION:
+amazon.com. IN    A       176.32.103.205
+amazon.com. IN    A       54.239.28.85
+amazon.com. IN    A       205.251.242.103
+
+Query time: 616 msec
+WHEN: Sun Sep 19 16:39:57 2021
+MSG SIZE rcvd: 209
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py google.co.jp A  
+
+(Output)
+QUESTION SECTION:
+google.co.jp            IN       A
+
+ANSWER SECTION:
+google.co.jp IN  A       142.250.176.67
+
+Query time: 1511 msec
+WHEN: Sun Sep 19 16:41:16 2021
+MSG SIZE rcvd: 147
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py google.com.hk A  
+
+(Output)
+QUESTION SECTION:
+google.com.hk           IN       A
+
+ANSWER SECTION:
+google.com.hk IN         A       74.125.21.94
+
+Query time: 1017 msec
+WHEN: Sun Sep 19 16:41:57 2021
+MSG SIZE rcvd: 147
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py google.co.in A  
+
+(Output)
+QUESTION SECTION:
+google.co.in            IN       A
+
+ANSWER SECTION:
+google.co.in IN  A       142.250.176.67
+
+Query time: 811 msec
+WHEN: Sun Sep 19 16:42:21 2021
+MSG SIZE rcvd: 146
+
+
+######################################################
+NS records
+######################################################
+
+(Input)
+python3 mydig.py google.com. NS  
+
+(Output)
+QUESTION SECTION:
+google.com.              IN       NS
+
+ANSWER SECTION:
+google.com. IN    NS      ns2.google.com.
+google.com. IN    NS      ns1.google.com.
+google.com. IN    NS      ns3.google.com.
+google.com. IN    NS      ns4.google.com.
+
+Query time: 420 msec
+WHEN: Sun Sep 19 16:40:44 2021
+MSG SIZE rcvd: 253
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py cnn.com. NS
+
+(Output)
+QUESTION SECTION:
+cnn.com.                 IN       NS
+
+ANSWER SECTION:
+cnn.com. IN       NS      ns-47.awsdns-05.com.
+cnn.com. IN       NS      ns-576.awsdns-08.net.
+cnn.com. IN       NS      ns-1630.awsdns-11.co.uk.
+cnn.com. IN       NS      ns-1086.awsdns-07.org.
+
+Query time: 286 msec
+WHEN: Sun Sep 19 16:43:21 2021
+MSG SIZE rcvd: 265
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py amazon.com. NS
+
+(Output)
+QUESTION SECTION:
+amazon.com.              IN       NS
+
+ANSWER SECTION:
+amazon.com. IN    NS      pdns1.ultradns.net.
+amazon.com. IN    NS      pdns6.ultradns.co.uk.
+amazon.com. IN    NS      ns1.p31.dynect.net.
+amazon.com. IN    NS      ns3.p31.dynect.net.
+amazon.com. IN    NS      ns2.p31.dynect.net.
+amazon.com. IN    NS      ns4.p31.dynect.net.
+
+Query time: 302 msec
+WHEN: Sun Sep 19 16:45:21 2021
+MSG SIZE rcvd: 351
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py www.cnn.com. NS
+
+(Output)
+QUESTION SECTION:
+www.cnn.com             IN       NS
+
+ANSWER SECTION:
+www.cnn.com. IN   CNAME   turner-tls.map.fastly.net.
+
+Query time: 290 msec
+WHEN: Sun Sep 19 17:02:54 2021
+MSG SIZE rcvd: 161
+
+
+
+######################################################
+MX records
+######################################################
+
+(Input)
+python3 mydig.py google.com. MX
+
+(Output)
+QUESTION SECTION:
+google.com.              IN       MX
+
+ANSWER SECTION:
+google.com. IN    MX      40 alt3.aspmx.l.google.com.
+google.com. IN    MX      10 aspmx.l.google.com.
+google.com. IN    MX      20 alt1.aspmx.l.google.com.
+google.com. IN    MX      30 alt2.aspmx.l.google.com.
+google.com. IN    MX      50 alt4.aspmx.l.google.com.
+
+Query time: 368 msec
+WHEN: Sun Sep 19 16:48:05 2021
+MSG SIZE rcvd: 344
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py apple.com. MX
+
+(Output)
+QUESTION SECTION:
+apple.com.               IN       MX
+
+ANSWER SECTION:
+apple.com. IN     MX      10 ma1-aaemail-dr-lapp03.apple.com.
+apple.com. IN     MX      10 ma1-aaemail-dr-lapp02.apple.com.
+apple.com. IN     MX      10 ma1-aaemail-dr-lapp01.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp45.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp44.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp35.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp34.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp24.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp15.apple.com.
+apple.com. IN     MX      10 rn-mailsvcp-ppex-lapp14.apple.com.
+
+Query time: 302 msec
+WHEN: Sun Sep 19 16:49:20 2021
+MSG SIZE rcvd: 672
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py amazon.com. MX
+
+(Output)
+QUESTION SECTION:
+amazon.com.              IN       MX
+
+ANSWER SECTION:
+amazon.com. IN    MX      5 amazon-smtp.amazon.com.
+
+Query time: 684 msec
+WHEN: Sun Sep 19 17:49:28 2021
+MSG SIZE rcvd: 155
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py www.cnn.com. MX
+
+(Output)
+www.cnn.com.             IN       MX
+
+ANSWER SECTION:
+www.cnn.com. IN   CNAME   turner-tls.map.fastly.net.
+
+Query time: 414 msec
+WHEN: Sun Sep 19 17:50:22 2021
+MSG SIZE rcvd: 161
+
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py www.cnn.com. MX
+
+(Output)
+QUESTION SECTION:
+cnn.com.                IN       MX
+
+ANSWER SECTION:
+cnn.com. IN      MX      10 mxa-00241e02.gslb.pphosted.com.
+cnn.com. IN      MX      10 mxb-00241e02.gslb.pphosted.com.
+
+Query time: 768 msec
+WHEN: Sun Sep 19 17:53:16 2021
+MSG SIZE rcvd: 213

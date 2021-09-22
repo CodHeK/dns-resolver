@@ -1,0 +1,12 @@
+
+QUESTION SECTION:
+netflix.com 		IN	 A
+
+ANSWER SECTION:
+netflix.com IN	 A 	 54.160.93.182
+netflix.com IN	 A 	 3.225.92.8
+netflix.com IN	 A 	 3.211.157.115
+
+Query time: 322.0 msec
+WHEN: Thu Sep 16 00:17:46 2021
+MSG SIZE rcvd: 210

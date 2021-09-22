@@ -1,0 +1,11 @@
+
+QUESTION SECTION:
+xinhuanet.com 		IN	 A
+
+ANSWER SECTION:
+xinhuanet.com IN	 A 	 202.108.119.193
+xinhuanet.com IN	 A 	 202.108.119.194
+
+Query time: 1954.0 msec
+WHEN: Thu Sep 16 00:17:41 2021
+MSG SIZE rcvd: 190

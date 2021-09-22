@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+live.com 		IN	 A
+
+ANSWER SECTION:
+live.com IN	 A 	 204.79.197.212
+
+Query time: 471.0 msec
+WHEN: Thu Sep 16 00:17:44 2021
+MSG SIZE rcvd: 140

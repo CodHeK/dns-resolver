@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+office.com 		IN	 A
+
+ANSWER SECTION:
+office.com IN	 A 	 13.107.6.156
+
+Query time: 359.0 msec
+WHEN: Thu Sep 16 00:18:36 2021
+MSG SIZE rcvd: 142

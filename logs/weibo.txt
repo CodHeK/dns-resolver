@@ -1,0 +1,11 @@
+
+QUESTION SECTION:
+weibo.com 		IN	 A
+
+ANSWER SECTION:
+weibo.com IN	 A 	 36.51.254.229
+weibo.com IN	 A 	 36.51.254.228
+
+Query time: 561.0 msec
+WHEN: Thu Sep 16 00:17:25 2021
+MSG SIZE rcvd: 173

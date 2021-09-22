@@ -1,0 +1,26 @@
+Website,mydig.py,Google DNS(8.8.8.8),Local DNS (130.245.255.4)
+google.com,361,9,11
+youtube.com,370,14,8
+tmall.com,470,11,123
+baidu.com,616,14,30
+qq.com,656,42,152
+sohu.com,725,60,287
+facebook.com,396,18,9
+taobao.com,428,35,72
+360.cn,1782,30,71
+jd.com,678,45,339
+amazon.com,668,13,10
+yahoo.com,338,17,11
+wikipedia.org,442,18,10
+weibo.com,649,40,276
+sina.com.cn,1147,41,285
+zoom.us,739,33,8
+xinhuanet.com,1461,66,428
+live.com,362,21,8
+netflix.com,460,20,12
+reddit.com,432,20,10
+instagram.com,304,19,8
+microsoft.com,320,72,7
+office.com,318,14,9
+google.com.hk,1302,18,133
+panda.tv,1299,25,36

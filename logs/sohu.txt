@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+sohu.com 		IN	 A
+
+ANSWER SECTION:
+sohu.com IN	 A 	 211.159.191.77
+
+Query time: 658.0 msec
+WHEN: Thu Sep 16 00:16:55 2021
+MSG SIZE rcvd: 140

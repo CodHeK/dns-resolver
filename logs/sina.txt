@@ -1,0 +1,12 @@
+
+QUESTION SECTION:
+sina.com.cn 		IN	 A
+
+ANSWER SECTION:
+sina.com.cn IN	 A 	 123.126.45.205
+sina.com.cn IN	 A 	 49.7.37.133
+sina.com.cn IN	 A 	 123.125.104.150
+
+Query time: 2004.0 msec
+WHEN: Thu Sep 16 00:17:26 2021
+MSG SIZE rcvd: 215

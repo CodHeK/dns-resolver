@@ -1,0 +1,13 @@
+
+QUESTION SECTION:
+jd.com 		IN	 A
+
+ANSWER SECTION:
+jd.com IN	 A 	 211.144.24.218
+jd.com IN	 A 	 111.13.149.108
+jd.com IN	 A 	 211.144.27.126
+jd.com IN	 A 	 118.193.98.63
+
+Query time: 737.0 msec
+WHEN: Thu Sep 16 00:17:02 2021
+MSG SIZE rcvd: 225

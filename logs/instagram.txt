@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+instagram.com 		IN	 A
+
+ANSWER SECTION:
+instagram.com IN	 A 	 157.240.241.174
+
+Query time: 328.0 msec
+WHEN: Thu Sep 16 00:18:33 2021
+MSG SIZE rcvd: 151

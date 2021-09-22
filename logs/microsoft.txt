@@ -1,0 +1,14 @@
+
+QUESTION SECTION:
+microsoft.com 		IN	 A
+
+ANSWER SECTION:
+microsoft.com IN	 A 	 104.215.148.63
+microsoft.com IN	 A 	 40.76.4.15
+microsoft.com IN	 A 	 40.112.72.205
+microsoft.com IN	 A 	 40.113.200.201
+microsoft.com IN	 A 	 13.77.161.179
+
+Query time: 387.0 msec
+WHEN: Thu Sep 16 00:18:34 2021
+MSG SIZE rcvd: 292

@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+facebook.com 		IN	 A
+
+ANSWER SECTION:
+facebook.com IN	 A 	 31.13.88.35
+
+Query time: 421.0 msec
+WHEN: Thu Sep 16 00:16:57 2021
+MSG SIZE rcvd: 145

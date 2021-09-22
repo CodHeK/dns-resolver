@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+wikipedia.org 		IN	 A
+
+ANSWER SECTION:
+wikipedia.org IN	 A 	 208.80.154.224
+
+Query time: 371.0 msec
+WHEN: Thu Sep 16 00:17:23 2021
+MSG SIZE rcvd: 150

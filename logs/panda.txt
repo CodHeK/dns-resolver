@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+panda.tv 		IN	 A
+
+ANSWER SECTION:
+panda.tv IN	 A 	 185.199.111.153
+
+Query time: 1104.0 msec
+WHEN: Thu Sep 16 00:18:37 2021
+MSG SIZE rcvd: 142

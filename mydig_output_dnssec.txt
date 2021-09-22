@@ -1,0 +1,57 @@
+######################################################
+A records
+######################################################
+
+(Input)
+python3 mydig.py www.dnssec-failed.org A --dnssec  
+
+(Output)
+Could not verify zone for  dnssec-failed.org.  Reason:  Hashes don't match
+DNSSec verification failed
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py verisigninc.com A --dnssec  
+
+(Output)
+QUESTION SECTION:
+verisigninc.com         IN      A
+
+ANSWER SECTION:
+verisigninc.com IN      A       209.131.162.45
+verisigninc.com IN      A       69.58.187.40
+
+Query time: 732 msec
+WHEN: Tue Sep 21 18:05:33 2021
+MSG SIZE rcvd: 183
+
+---------------------------------------------------------
+
+(Input)
+python3 mydig.py google.co.jp A --dnssec  
+
+(Output)
+DNSSEC not supported
+
+
+######################################################
+NS records
+######################################################
+
+(Input)
+python3 mydig.py verisigninc.com NS --dnssec  
+
+(Output)
+QUESTION SECTION:
+verisigninc.com         IN      NS
+
+ANSWER SECTION:
+verisigninc.com.        IN      NS      av2.nstld.com.
+verisigninc.com.        IN      NS      av4.nstld.com.
+verisigninc.com.        IN      NS      av1.nstld.com.
+verisigninc.com.        IN      NS      av3.nstld.com.
+
+Query time: 665 msec
+WHEN: Tue Sep 21 20:44:06 2021
+MSG SIZE rcvd: 268

@@ -1,0 +1,11 @@
+
+QUESTION SECTION:
+taobao.com 		IN	 A
+
+ANSWER SECTION:
+taobao.com IN	 A 	 140.205.220.96
+taobao.com IN	 A 	 140.205.94.189
+
+Query time: 545.0 msec
+WHEN: Thu Sep 16 00:16:58 2021
+MSG SIZE rcvd: 178

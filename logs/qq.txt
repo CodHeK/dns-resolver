@@ -1,0 +1,13 @@
+
+QUESTION SECTION:
+qq.com 		IN	 A
+
+ANSWER SECTION:
+qq.com IN	 A 	 123.151.137.18
+qq.com IN	 A 	 61.129.7.47
+qq.com IN	 A 	 183.3.226.35
+qq.com IN	 A 	 203.205.254.157
+
+Query time: 739.0 msec
+WHEN: Thu Sep 16 00:16:06 2021
+MSG SIZE rcvd: 222

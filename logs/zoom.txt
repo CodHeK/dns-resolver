@@ -1,0 +1,10 @@
+
+QUESTION SECTION:
+zoom.us 		IN	 A
+
+ANSWER SECTION:
+zoom.us IN	 A 	 52.202.62.250
+
+Query time: 1045.0 msec
+WHEN: Thu Sep 16 00:17:39 2021
+MSG SIZE rcvd: 138

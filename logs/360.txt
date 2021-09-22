@@ -1,0 +1,11 @@
+
+QUESTION SECTION:
+360.cn 		IN	 A
+
+ANSWER SECTION:
+360.cn IN	 A 	 36.99.170.84
+360.cn IN	 A 	 36.110.213.10
+
+Query time: 1548.0 msec
+WHEN: Thu Sep 16 00:17:00 2021
+MSG SIZE rcvd: 164

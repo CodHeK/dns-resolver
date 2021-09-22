@@ -1,0 +1,11 @@
+
+QUESTION SECTION:
+tmall.com 		IN	 A
+
+ANSWER SECTION:
+tmall.com IN	 A 	 140.205.94.193
+tmall.com IN	 A 	 140.205.130.99
+
+Query time: 5351.0 msec
+WHEN: Thu Sep 16 02:21:55 2021
+MSG SIZE rcvd: 176

@@ -1,0 +1,13 @@
+
+QUESTION SECTION:
+youtube.com 		IN	 A
+
+ANSWER SECTION:
+youtube.com IN	 A 	 108.177.122.93
+youtube.com IN	 A 	 108.177.122.136
+youtube.com IN	 A 	 108.177.122.190
+youtube.com IN	 A 	 108.177.122.91
+
+Query time: 3852.0 msec
+WHEN: Thu Sep 16 02:21:45 2021
+MSG SIZE rcvd: 254

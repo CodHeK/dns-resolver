@@ -1,0 +1,13 @@
+
+QUESTION SECTION:
+reddit.com 		IN	 A
+
+ANSWER SECTION:
+reddit.com IN	 A 	 151.101.1.140
+reddit.com IN	 A 	 151.101.129.140
+reddit.com IN	 A 	 151.101.65.140
+reddit.com IN	 A 	 151.101.193.140
+
+Query time: 1437.0 msec
+WHEN: Thu Sep 16 00:17:47 2021
+MSG SIZE rcvd: 248
