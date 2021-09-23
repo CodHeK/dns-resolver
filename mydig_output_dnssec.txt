@@ -29,6 +29,23 @@ MSG SIZE rcvd: 183
 ---------------------------------------------------------
 
 (Input)
+./mydig.py paypal.com A --dnssec  
+
+(Output)
+QUESTION SECTION:
+paypal.com              IN      A
+
+ANSWER SECTION:
+paypal.com.     IN      A       64.4.250.36
+paypal.com.     IN      A       64.4.250.37
+
+Query time: 710 msec
+WHEN: Thu Sep 23 17:58:04 2021
+MSG SIZE rcvd: 166
+
+---------------------------------------------------------
+
+(Input)
 ./mydig.py google.co.jp A --dnssec  
 
 (Output)
@@ -55,3 +72,64 @@ verisigninc.com.        IN      NS      av3.nstld.com.
 Query time: 665 msec
 WHEN: Tue Sep 21 20:44:06 2021
 MSG SIZE rcvd: 268
+
+---------------------------------------------------------
+
+(Input)
+./mydig.py paypal.com NS --dnssec  
+
+(Output)
+QUESTION SECTION:
+paypal.com              IN      NS
+
+ANSWER SECTION:
+paypal.com.     IN      NS      ns2.p57.dynect.net.
+paypal.com.     IN      NS      pdns100.ultradns.net.
+paypal.com.     IN      NS      pdns100.ultradns.com.
+paypal.com.     IN      NS      ns1.p57.dynect.net.
+
+Query time: 765 msec
+WHEN: Thu Sep 23 17:58:37 2021
+MSG SIZE rcvd: 267
+
+######################################################
+MX records
+######################################################
+
+(Input)
+./mydig.py paypal.com MX --dnssec  
+
+(Output)
+QUESTION SECTION:
+paypal.com              IN      MX
+
+ANSWER SECTION:
+paypal.com.     IN      MX      10 mx2.paypalcorp.com.
+paypal.com.     IN      MX      10 mx1.paypalcorp.com.
+
+Query time: 595 msec
+WHEN: Thu Sep 23 18:01:19 2021
+MSG SIZE rcvd: 191
+
+---------------------------------------------------------
+
+(Input)
+./mydig.py verisigninc.com MX --dnssec  
+
+(Output)
+QUESTION SECTION:
+verisigninc.com         IN      MX
+
+ANSWER SECTION:
+verisigninc.com.        IN      MX      10 mail2.verisign.com.
+verisigninc.com.        IN      MX      10 mail4.verisign.com.
+verisigninc.com.        IN      MX      10 mail6.verisign.com.
+verisigninc.com.        IN      MX      10 mail1.verisign.com.
+verisigninc.com.        IN      MX      10 mail3.verisign.com.
+verisigninc.com.        IN      MX      10 mail5.verisign.com.
+
+Query time: 726 msec
+WHEN: Thu Sep 23 18:02:16 2021
+MSG SIZE rcvd: 394
+
+---------------------------------------------------------

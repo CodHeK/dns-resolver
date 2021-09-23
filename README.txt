@@ -18,7 +18,7 @@ $ pip3 install -r requirements.txt
 ajjikuttira-gagan-ganapathy-HW1
 │   README.txt
 │   mydig.py  // ENTRYPOINT INTO THE PROJECT
-│   custom_resolver.py   
+│   custom_resolver.py  // IMPLEMENTS HELPER METHODS FOR BOTH RESOLVERS
 |   dns_resolvers.py // DNS RESOLVER IMPLEMENTATION
 |   dnssec_resolvers.py // DNSSEC RESOLVER IMPLEMENTATION
 |   ...
@@ -56,6 +56,8 @@ NOTE:
 $ chmod +x mydig.py
 
 now try running the script as `./mydig.py`
+
+OR try running the project using `python3 mydig.py ...`
 
 
 - Externel Libraries used:

@@ -337,7 +337,7 @@ class MX_Resolver(CustomResolver):
                             if rr.rdtype == self.query_type:
                                 # Establish trust for the DNSKEY Records
                                 query_name, dnskey_rrset = self.verify_dnskey(child_zone_dnskey_response)
-
+                                
                                 if(
                                     # Establish trust for the query type Records
                                     self.verify_rdtype(

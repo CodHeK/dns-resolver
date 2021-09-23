@@ -38,9 +38,9 @@ class CustomResolver:
         required_rrset, rrsig, query_name = '', '', ''
         records = []
 
-        if rdtype == dns.rdatatype.DNSKEY or rdtype == dns.rdatatype.A:
+        if rdtype in [ dns.rdatatype.DNSKEY, dns.rdatatype.A, dns.rdatatype.MX ]:
             records = response.answer
-        elif rdtype == dns.rdatatype.DS or rdtype == dns.rdatatype.NS:
+        elif rdtype in [ dns.rdatatype.DS, dns.rdatatype.NS ]:
             if len(response.authority) > 0:
                 records = response.authority
             else:
