@@ -17,16 +17,16 @@ class A_Resolver(CustomResolver):
     
     def resolve(self):
         try:
-            domain = dns.name.from_text(self.domain_name)
-
-            _, root_ns, server_ipv4 = self.get_root_ns_info()
+            _, _, server_ipv4 = self.get_root_ns_info()
 
             parent_zone_query_response = self.query(self.domain_name, self.query_type, server_ipv4)
             parent_zone_dnskey_response = self.query('.', dns.rdatatype.DNSKEY, server_ipv4)
 
+            # Validate the RRSIG for the DNSKEY records
             query_name, dnskey_rrset = self.verify_dnskey(parent_zone_dnskey_response)
 
             if(
+                # Validate the RRSIG for the DS records
                 self.verify_rdtype(
                     parent_zone_query_response,
                     rdtype=dns.rdatatype.DS,
@@ -35,7 +35,8 @@ class A_Resolver(CustomResolver):
                 and
                 # Verify the root zone with hardcoded root KSK
                 self.verify_zone(parent_zone_dnskey_response, None)
-            ):
+            ):  
+                # Keep looping until STATUS is not None
                 STATUS = None
                 while True:
                     if len(parent_zone_query_response.additional) > 0:
@@ -83,6 +84,8 @@ class A_Resolver(CustomResolver):
 
                         server_ipv4 = response[0][0]
 
+                        # Add the resolved nameserver IP into the additional section
+                        # for further iterations
                         parent_zone_query_response.additional.append(
                             dns.rrset.from_text(rr.to_text(), 172800, 'IN', 'A', server_ipv4)
                         )
@@ -136,18 +139,17 @@ class NS_Resolver(CustomResolver):
 
     def resolve(self):
         try:
-            domain = dns.name.from_text(self.domain_name)
-
-            _, root_ns, server_ipv4 = self.get_root_ns_info()
+            _, _, server_ipv4 = self.get_root_ns_info()
 
             parent_zone_query_response = self.query(self.domain_name, self.query_type, server_ipv4)
             parent_zone_dnskey_response = self.query('.', dns.rdatatype.DNSKEY, server_ipv4)
-  
+
+            # Validate the RRSIG for the DNSKEY records
             query_name, dnskey_rrset = self.verify_dnskey(parent_zone_dnskey_response)
             
             # Establish chain of trust
             if(
-                # Establish trust for the DS Records
+                # Validate the RRSIG for the DS records
                 self.verify_rdtype(
                     parent_zone_query_response,
                     rdtype=dns.rdatatype.DS,
@@ -157,6 +159,7 @@ class NS_Resolver(CustomResolver):
                 # Verify the root zone with hardcoded root KSK
                 self.verify_zone(parent_zone_dnskey_response, None)
             ):
+                # Keep looping until STATUS is not None
                 STATUS = None
                 while True:
                     if len(parent_zone_query_response.additional) > 0:
@@ -205,6 +208,8 @@ class NS_Resolver(CustomResolver):
 
                         server_ipv4 = response[0][0]
 
+                        # Add the resolved nameserver IP into the additional section
+                        # for further iterations
                         parent_zone_query_response.additional.append(
                             dns.rrset.from_text(rr.to_text(), 172800, 'IN', 'A', server_ipv4)
                         )
@@ -249,16 +254,16 @@ class MX_Resolver(CustomResolver):
 
     def resolve(self):
         try:
-            domain = dns.name.from_text(self.domain_name)
-
-            _, root_ns, server_ipv4 = self.get_root_ns_info()
+            _, _, server_ipv4 = self.get_root_ns_info()
 
             parent_zone_query_response = self.query(self.domain_name, self.query_type, server_ipv4)
             parent_zone_dnskey_response = self.query('.', dns.rdatatype.DNSKEY, server_ipv4)
-  
+
+            # Validate the RRSIG for the DNSKEY records
             query_name, dnskey_rrset = self.verify_dnskey(parent_zone_dnskey_response)
 
             if(
+                # Validate the RRSIG for the DS records
                 self.verify_rdtype(
                     parent_zone_query_response,
                     rdtype=dns.rdatatype.DS,
@@ -268,6 +273,7 @@ class MX_Resolver(CustomResolver):
                 # Verify the root zone with hardcoded root KSK
                 self.verify_zone(parent_zone_dnskey_response, None)
             ):
+                # Keep looping until STATUS is not None
                 STATUS = None
                 while True:
                     if len(parent_zone_query_response.additional) > 0:
@@ -315,6 +321,8 @@ class MX_Resolver(CustomResolver):
 
                         server_ipv4 = response[0][0]
 
+                        # Add the resolved nameserver IP into the additional section
+                        # for further iterations
                         parent_zone_query_response.additional.append(
                             dns.rrset.from_text(rr.to_text(), 172800, 'IN', 'A', server_ipv4)
                         )

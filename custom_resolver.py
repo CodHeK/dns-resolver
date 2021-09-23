@@ -33,12 +33,7 @@ class CustomResolver:
 
         return response
 
-    
-    def get_public_ksk(self, dnskey_record):
-        for dnskey in dnskey_record:
-            if dnskey.flags == 257:
-                return dnskey
-    
+
     def retrieve_rrset_info(self, response, rdtype):
         required_rrset, rrsig, query_name = '', '', ''
         records = []
@@ -119,25 +114,31 @@ class CustomResolver:
     
     def verify_zone(self, response, response_parent):
         '''
-            Verifying if hashed child zone public KSK matches the DS record from parent zone
+            Verifying if the hashed child zone public KSK 
+            matches the DS record from parent zone
         '''
         try:
             dnskey_record, dnskey_rrsig, query_name = self.retrieve_rrset_info(response, dns.rdatatype.DNSKEY)
-            child_public_ksk = self.get_public_ksk(dnskey_record)
+            child_public_ksk = None
+            for dnskey in dnskey_record:
+                if dnskey.flags == 257:
+                    child_public_ksk = dnskey
+                    break
+            if child_public_ksk:   
+                if response_parent:
+                    parent_ds_record, query_name = self.get_parent_ds_record(response_parent)
 
-            if response_parent:
-                parent_ds_record, query_name = self.get_parent_ds_record(response_parent)
-
-                if not self.validate_hash(query_name, child_public_ksk, parent_ds_record):
+                    if not self.validate_hash(query_name, child_public_ksk, parent_ds_record):
+                        raise Exception("Hashes don't match")
+                else:
+                    # Verify directly with harcoded root anchors for the root
+                    for root_anchor in self.root_anchors:
+                        if self.validate_hash('.', child_public_ksk, root_anchor):
+                            return True
                     raise Exception("Hashes don't match")
-            else:
-                # Verify directly with harcoded root anchors for the root
-                for root_anchor in self.root_anchors:
-                    if self.validate_hash('.', child_public_ksk, root_anchor):
-                        return True
-                raise Exception("Hashes don't match")
-            
-            return True
+                
+                return True
+            return Exception("Couldn't find 'child_public_ksk' in the dnskey response")
 
         except Exception as e:
             print('Could not verify zone for ', query_name, ' Reason: ', e)
