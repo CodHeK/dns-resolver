@@ -19,11 +19,11 @@ ajjikuttira-gagan-ganapathy-HW1
 │   README.txt
 │   mydig.py  // ENTRYPOINT INTO THE PROJECT
 │   custom_resolver.py  // IMPLEMENTS HELPER METHODS FOR BOTH RESOLVERS
-|   dns_resolvers.py // DNS RESOLVER IMPLEMENTATION
-|   dnssec_resolvers.py // DNSSEC RESOLVER IMPLEMENTATION
+|   dns_resolvers.py // DNS RESOLVER IMPLEMENTATION (PART A)
+|   dnssec_resolvers.py // DNSSEC RESOLVER IMPLEMENTATION (PART B)
 |   ...
 |   performance_test.py // MEASURE PERFORMANCE AND STORE IN CSV
-|   performance_report.py // GENERATE CDF OF THE DNS RESOLUTION TIMES
+|   performance_report.py // GENERATE CDF OF THE DNS RESOLUTION TIMES (PART C)
 |   ...
 |   mydig_output.txt // EXAMPLE OUTPUTS FOR A, NS, MX RECORDS USING A DNS RESOLVER
 |   mydig_output_dnssec.txt // EXAMPLE OUTPUTS FOR A, NS, MX RECORDS USING A DNSSEC RESOLVER

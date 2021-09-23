@@ -1,3 +1,7 @@
+'''
+Assignment Part - C
+'''
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -30,9 +34,6 @@ if __name__ == '__main__':
                 df_list.append(curr_df)
     
         df = pd.concat(df_list, axis=1)
-
-        # csv = df.to_csv(index=False)
-        # print(csv)
 
         '''Plot the CDFs'''
         plt.figure(figsize=(16,8))

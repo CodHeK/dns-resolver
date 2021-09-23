@@ -1,3 +1,6 @@
+'''
+Assignment Part - A
+'''
 from abc import abstractmethod
 import dns.query
 import dns.resolver
